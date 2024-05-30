@@ -8,3 +8,17 @@ body {
     color: white;
     text-align: center;
 }
+
+#hiy {
+    margin: 25px auto 25px auto;
+    background-color: pink; 
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.divmg {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    margin: 10px;
+}
