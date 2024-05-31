@@ -4,8 +4,9 @@ html {
 
 header {
     padding: 20px;
-    background-color: pink;
+    background-color: rgb(165, 208, 165);
     color: #fff;
+    position: relative;
 }
 
 nav {
@@ -13,7 +14,7 @@ nav {
 }
 
 nav a {
-    color: gray;
+    color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -28,7 +29,7 @@ nav a {
 }
 
 .button {
-    background-color: pink;
+    background-color: rgb(165, 208, 165);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -52,7 +53,7 @@ body {
 
 #hiy {
     margin: 25px auto 25px auto;
-    background-color: pink; 
+    background-color: rgb(165, 208, 165); 
     border-radius: 50px;
     width: fit-content;
 }
@@ -62,4 +63,18 @@ body {
     width: 200px;
     border-radius: 50px;
     margin: 10px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 10px;
 }
