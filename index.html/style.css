@@ -44,6 +44,7 @@ nav a {
     text-decoration: none;
     display: inline-black;
     margin-top: 20px;
+    border: 5px solid #fff;
 }
 
 .button:hover {
@@ -90,6 +91,7 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
     margin-top: 10px;
+    align-self: center;
 }
 
 section {
@@ -101,6 +103,11 @@ section {
 }
 
 h2 {
+    color: rgb(150, 195, 150);
+    text-align: center;
+}
+
+h3 {
     color: #333;
     text-align: center;
 }
@@ -119,6 +126,9 @@ input, textarea {
     width: 80%;
     padding: 0.5rem;
     margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input[type="submit"] {
@@ -132,4 +142,20 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #575757;
+}
+
+.hobby {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
