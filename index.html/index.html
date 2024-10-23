@@ -9,6 +9,23 @@
         <h1> Sandy Zheng </h1>
         <p> Welcome to my personal website :) </p>
     </header>
+
+    <script>
+        window.onload = function() {
+            const greeting = document.createElement('p');
+            const hours = new Date().getHours();
+            if (hours < 12) {
+                greeting.textContent = "Good Morning!";
+            } else if (hours < 18) {
+                greeting.textContent = "Good Afternoon!";
+            } else {
+                greeting.textContent = "Good Evening!";
+            }
+            document.querySelector('header').appendChild(greeting);
+        };
+    </script>
+
+    
     <nav>
         <ul>
         <a href="#about">About</a>
@@ -114,5 +131,16 @@
     <footer> 
         <p>&copy; 2024 Sandy Zheng</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('h1', {
+        strings: ["Sandy Zheng"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: false
+    });
+</script>
+
 </body>
 </html>
