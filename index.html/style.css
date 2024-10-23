@@ -165,3 +165,16 @@ input[type="submit"]:hover {
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hiy img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#hiy img:hover {
+    transform: scale(1.1);
+}
+
