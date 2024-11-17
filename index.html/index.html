@@ -6,23 +6,25 @@
 </head>
 <body>
     <header>
-        <h1> Sandy Zheng </h1>
+        <h1> Sandy Zheng <span id="typed"></span> </h1>
         <p> Welcome to my personal website :) </p>
     </header>
 
+    <p id="greeting">Loading...</p>
+
     <script>
         window.onload = function() {
-            const greeting = document.createElement('p');
-            const hours = new Date().getHours();
-            if (hours < 12) {
-                greeting.textContent = "Good Morning!";
-            } else if (hours < 18) {
-                greeting.textContent = "Good Afternoon!";
-            } else {
-                greeting.textContent = "Good Evening!";
-            }
-            document.querySelector('header').appendChild(greeting);
-        };
+    const greeting = document.getElementById('greeting');
+    const hours = new Date().getHours();
+    if (hours < 12) {
+        greeting.textContent = "Good Morning!";
+    } else if (hours < 18) {
+        greeting.textContent = "Good Afternoon!";
+    } else {
+        greeting.textContent = "Good Evening!";
+    }
+};
+
     </script>
 
     
@@ -134,12 +136,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
-    var typed = new Typed('h1', {
-        strings: ["Sandy Zheng"],
-        typeSpeed: 50,
-        backSpeed: 25,
-        loop: false
-    });
+    var typed = new Typed('#typed', {
+    strings: ["Sandy Zheng"],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: false
+});
 </script>
 
 </body>
